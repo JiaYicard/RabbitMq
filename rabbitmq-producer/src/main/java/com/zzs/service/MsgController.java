@@ -1,7 +1,7 @@
-package com.zzs.controller;
+package com.zzs.service;
 
 import com.alibaba.fastjson.JSONObject;
-import com.zzs.entity.MsgEntity;
+import com.zzs.MsgEntity;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

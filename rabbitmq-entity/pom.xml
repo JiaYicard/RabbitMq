@@ -9,15 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>rabbmitmq-consumer</artifactId>
+    <artifactId>rabbitmq-entity</artifactId>
 
-
-    <dependencies>
-        <dependency>
-            <groupId>com.zzs</groupId>
-            <artifactId>rabbitmq-entity</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-    </dependencies>
 
 </project>

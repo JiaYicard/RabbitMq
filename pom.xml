@@ -11,6 +11,7 @@
     <modules>
         <module>rabbitmq-producer</module>
         <module>rabbmitmq-consumer</module>
+        <module>rabbitmq-entity</module>
     </modules>
 
     <parent>

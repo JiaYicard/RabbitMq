@@ -1,4 +1,4 @@
-package com.zzs.entity;
+package com.zzs;
 
 import lombok.Data;
 
