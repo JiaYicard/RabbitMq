@@ -1,6 +1,7 @@
 package com.zzs.service;
 
 import com.alibaba.fastjson.JSONObject;
+import com.zzs.MsgEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
@@ -16,11 +17,9 @@ import org.springframework.stereotype.Component;
 public class SmsConsumerService {
 
     @RabbitHandler
-    private void process(JSONObject msgEntity) {
-        try {
-            log.info("SmsMsg：==============================" + msgEntity.toJSONString());
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+    private void process(String msg) {
+        MsgEntity msgEntity = JSONObject.parseObject(msg).toJavaObject(MsgEntity.class);
+        log.info("SmsMsg：==============================" + JSONObject.parseObject(msg));
+
     }
 }
